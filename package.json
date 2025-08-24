@@ -6,6 +6,7 @@
     "packages/*"
   ],
   "devDependencies": {
+    "js-sanitizer": "git+https://github.com/Negar-Hashemi/js-sanitizer.git",
     "coveralls": "3.0.9",
     "jest": "^26.0.1",
     "prettier": "1.19.1",
