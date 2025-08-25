@@ -203,6 +203,9 @@ describe('error reporting', function() {
       });
     });
     describe('in a mixin', function() {
+      /**
+       * @enabledForNodeRange min=14,max=16
+       */
       it('includes detail of where the error was thrown including the filename', function() {
         var err = getFileError(
           __dirname + '/fixtures/runtime.with.mixin.error.pug',
@@ -213,6 +216,9 @@ describe('error reporting', function() {
       });
     });
     describe('in a layout', function() {
+      /**
+       * @enabledForNodeRange min=14,max=16
+       */
       it('includes detail of where the error was thrown including the filename', function() {
         var err = getFileError(
           __dirname + '/fixtures/runtime.layout.error.pug',
